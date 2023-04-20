@@ -48,7 +48,7 @@ void Graph::BFS(int s) {
     while (!queue.empty()) {
         // Dequeue a vertex from queue and print it
         s = queue.front();
-        cout << s << " ";
+        this->BFSnodes.push_back(s);
         queue.pop_front();
  
         // Get all adjacent vertices of the dequeued
@@ -67,12 +67,20 @@ void Graph::DFS(int s) {
   DFSvisited[s] = true;
   list<int> adjList = adjlist[s];
 
-  cout << s << " ";
+  this->DFSnodes.push_back(s);
 
   list<int>::iterator i;
   for (i = adjList.begin(); i != adjList.end(); ++i)
     if (!DFSvisited[*i])
       DFS(*i);
+}
+
+vector<int> Graph::getBFS() {
+    return (this->BFSnodes);
+}
+
+vector<int> Graph::getDFS() {
+    return (this->DFSnodes);
 }
 
 // int main() {
@@ -86,41 +94,41 @@ void Graph::DFS(int s) {
 //     g.printGraph();
 // }
 
-int main() {
-    // Create a graph given in the above diagram
-    Graph g(17);
-    g.addEdge(0, 1, true);
-    g.addEdge(0, 4, true);
-    g.addEdge(0, 7, true);
-    g.addEdge(0, 10, true);
-    g.addEdge(0, 12, true);
-    g.addEdge(0, 15, true);
+// int main() {
+//     // Create a graph given in the above diagram
+//     Graph g(17);
+//     g.addEdge(0, 1, true);
+//     g.addEdge(0, 4, true);
+//     g.addEdge(0, 7, true);
+//     g.addEdge(0, 10, true);
+//     g.addEdge(0, 12, true);
+//     g.addEdge(0, 15, true);
 
-    g.addEdge(1, 2, true);
-    g.addEdge(1, 3, true);
+//     g.addEdge(1, 2, true);
+//     g.addEdge(1, 3, true);
 
-    g.addEdge(4, 5, true);
-    g.addEdge(4, 6, true);
+//     g.addEdge(4, 5, true);
+//     g.addEdge(4, 6, true);
 
-    g.addEdge(7, 8, true);
-    g.addEdge(7, 9, true);
+//     g.addEdge(7, 8, true);
+//     g.addEdge(7, 9, true);
 
-    g.addEdge(10, 11, true);
+//     g.addEdge(10, 11, true);
 
-    g.addEdge(12, 13, true);
-    g.addEdge(12, 14, true);
+//     g.addEdge(12, 13, true);
+//     g.addEdge(12, 14, true);
 
-    g.addEdge(15, 16, true);
+//     g.addEdge(15, 16, true);
  
-    cout << "Following is Breadth First Traversal "
-         << "(starting from vertex 2) \n";
-    g.BFS(0);
+//     cout << "Following is Breadth First Traversal "
+//          << "(starting from vertex 0) \n";
+//     g.BFS(0);
 
-    cout << endl << "Following is Depth First Traversal"
-            " (starting from vertex 2) \n";
+//     cout << endl << "Following is Depth First Traversal"
+//             " (starting from vertex 0) \n";
  
-    // Function call
-    g.DFS(0);
+//     // Function call
+//     g.DFS(0);
  
-    return 0;
-}
+//     return 0;
+// }

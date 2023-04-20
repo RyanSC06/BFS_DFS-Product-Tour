@@ -11,7 +11,7 @@ Feature::Feature(int state) {
 
 void Feature::printDisplay() {
     if (this->state == 0) {  //MAIN
-        cout << "Layar Utama" << endl;
+        cout << endl << "Layar Utama" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -28,7 +28,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 1) {  //ISI RENGOKU
-        cout << "Layar RENGOKU" << endl;
+        cout << endl << "Layar RENGOKU" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -45,7 +45,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 2) {  //ISI YANMA GUST
-        cout << "Layar YANMA GUST" << endl;
+        cout << endl << "Layar YANMA GUST" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -62,7 +62,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 3) {  //ISI GEATS
-        cout << "Layar GEATS" << endl;
+        cout << endl << "Layar GEATS" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -79,7 +79,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 4) {  //ISI 112
-        cout << "Layar 112" << endl;
+        cout << endl << "Layar 112" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -96,7 +96,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 5) {  //ISI 24
-        cout << "Layar GEATS" << endl;
+        cout << endl << "Layar 24" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -113,7 +113,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 6) {
-        cout << "Layar 8" << endl;
+        cout << endl << "Layar 8" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;

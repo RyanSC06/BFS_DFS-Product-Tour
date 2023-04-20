@@ -13,13 +13,19 @@ class Game {
     Things inventory[100];
     Things buyable[6];
     
-    Button list_button[17];
+    vector<Button*> list_button;
     Graph app_structure;
     int curr_state;
 
   public:
-    Game(Graph app_structure, Button list_button[]);
-    // int inputCommand();
+    Game(vector<Button*> list_button);
+    Graph getGraph();
+    vector<Button*> getListButton();
+    int getCurrentState();
+    void setCurrentState(int state);
+    void doBFS();
+    void doDFS();
+    // void inputCommand();
 };
 
 #endif

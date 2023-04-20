@@ -3,19 +3,75 @@
 
 #include <iostream>
 #include "Feature.hpp"
+#include "Things.hpp"
 using namespace std;
 
 class Button : public Feature {
   private:
     
   public:
-    Button();
     Button(int);
-    void showTour();
+    void virtual showTour() = 0;
     Button& operator= (const Button&);
 };
 
-class Button11 : public Button {  //RENGOKU
+class Button00 : public Button {  //MAIN
+  private:
+    
+  public:
+    Button00();
+    void showTour();
+};
+
+class Button01 : public Button {  //RENGOKU
+  private:
+    
+  public:
+    Button01();
+    void showTour();
+};
+
+class Button02 : public Button {  //YANMA GUST
+  private:
+    
+  public:
+    Button02();
+    void showTour();
+};
+
+class Button03 : public Button {  //GEATS
+  private:
+    
+  public:
+    Button03();
+    void showTour();
+};
+
+class Button04 : public Button {  //112
+  private:
+    
+  public:
+    Button04();
+    void showTour();
+};
+
+class Button05 : public Button {  //24
+  private:
+    
+  public:
+    Button05();
+    void showTour();
+};
+
+class Button06 : public Button {  //8
+  private:
+    
+  public:
+    Button06();
+    void showTour();
+};
+
+class Button11 : public Button {  //PILIH BARANG
   private:
     
   public:
@@ -23,7 +79,7 @@ class Button11 : public Button {  //RENGOKU
     void showTour();
 };
 
-class Button12 : public Button {  //YANMA GUST
+class Button12 : public Button {  //KEMBALI DARI 1
   private:
     
   public:
@@ -31,35 +87,67 @@ class Button12 : public Button {  //YANMA GUST
     void showTour();
 };
 
-class Button13 : public Button {  //GEATS
+class Button21 : public Button {  //KLAIM ATAU SUMBANGKAN
   private:
     
   public:
-    Button13();
+    Button21();
     void showTour();
 };
 
-class Button14 : public Button {  //112
+class Button22 : public Button {  //KEMBALI DARI 2
   private:
     
   public:
-    Button14();
+    Button22();
     void showTour();
 };
 
-class Button15 : public Button {  //24
+class Button31 : public Button {  //KONFIRMASI ATAU BATALKAN
   private:
     
   public:
-    Button15();
+    Button31();
     void showTour();
 };
 
-class Button16 : public Button {  //8
+class Button32 : public Button {  //KEMBALI DARI 3
   private:
     
   public:
-    Button16();
+    Button32();
+    void showTour();
+};
+
+class Button41 : public Button {  //KEMBALI DARI 4
+  private:
+    
+  public:
+    Button41();
+    void showTour();
+};
+
+class Button51 : public Button {  //TOP UP
+  private:
+    
+  public:
+    Button51();
+    void showTour();
+};
+
+class Button52 : public Button {  //KEMBALI DARI 5
+  private:
+    
+  public:
+    Button52();
+    void showTour();
+};
+
+class Button61 : public Button {  //KEMBALI DARI 6
+  private:
+    
+  public:
+    Button61();
     void showTour();
 };
 

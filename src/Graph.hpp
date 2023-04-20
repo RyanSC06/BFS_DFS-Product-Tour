@@ -15,6 +15,8 @@ class Graph {
     list<int> *adjlist;
     int n;
     bool *DFSvisited;
+    vector<int> DFSnodes;
+    vector<int> BFSnodes;
 
     Graph();
     Graph(int n);
@@ -23,6 +25,9 @@ class Graph {
     void printGraph();
     void BFS(int s);
     void DFS(int s);
+
+    vector<int> getBFS();
+    vector<int> getDFS();
 };
 
 #endif
