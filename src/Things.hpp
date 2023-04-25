@@ -1,7 +1,7 @@
 #ifndef _THINGS_HPP_
 #define _THINGS_HPP_
 
-#include <stdio.h>
+#include <iostream>
 #include <cstring>
 using namespace std;
 

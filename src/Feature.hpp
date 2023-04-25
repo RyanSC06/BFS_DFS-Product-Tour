@@ -1,7 +1,7 @@
 #ifndef _FEATURE_HPP_
 #define _FEATURE_HPP_
 
-#include <stdio.h>
+#include <iostream>
 using namespace std;
 
 class Feature {
