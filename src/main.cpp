@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+    // MENYIAPKAN DAN MENGURUTKAN BUTTON
     Button00* b00 = new Button00();
     Button01* b01 = new Button01();
     Button02* b02 = new Button02();
@@ -46,6 +47,7 @@ int main() {
     list_button.push_back(b61);
 
 
+    // MEMINTA OPSI BFS ATAU DFS
     char option[] = "0";
     cout << "1. BFS" << endl;
     cout << "2. DFS" << endl;
@@ -59,8 +61,11 @@ int main() {
     cout << endl;
     
 
+    // MEMBUAT GAME
     Game theGame = Game(list_button);
 
+
+    // MEMBANGKITKAN TUR-PRODUK
     if (strcmp(option,"1") == 0) {
         theGame.doBFS();
         // for (int i = 0; i < theGame.getGraph().getBFS().size(); i++) {
@@ -74,9 +79,12 @@ int main() {
             // cout << "Status yang diperiksa: " << theGame.getListButton()[theGame.getGraph().getBFS()[i]]->getState() << endl;
             if (theGame.getListButton()[theGame.getGraph().getBFS()[i]]->getState() != theGame.getCurrentState()) {
                 // cout << "Masuk kasus 1" << endl;
-                theGame.getListButton()[theGame.getGraph().getBFS()[i]]->printDisplay();
-                theGame.getListButton()[theGame.getGraph().getBFS()[i]]->showTour();
                 theGame.setCurrentState(theGame.getListButton()[theGame.getGraph().getBFS()[i]]->getState());
+                theGame.getListButton()[theGame.getGraph().getBFS()[i]]->printDisplay();
+                if (theGame.getCurrentState() != 0) {
+                    cout << endl << "Pada halaman ini," << endl;
+                }
+                theGame.getListButton()[theGame.getGraph().getBFS()[i]]->showTour();
             } else {
                 // cout << "Masuk kasus 2" << endl;
                 theGame.getListButton()[theGame.getGraph().getBFS()[i]]->showTour();
@@ -98,9 +106,12 @@ int main() {
             // cout << "Status yang diperiksa: " << theGame.getListButton()[theGame.getGraph().getDFS()[i]]->getState() << endl;
             if (theGame.getListButton()[theGame.getGraph().getDFS()[i]]->getState() != theGame.getCurrentState()) {
                 // cout << "Masuk kasus 1" << endl;
-                theGame.getListButton()[theGame.getGraph().getDFS()[i]]->printDisplay();
-                theGame.getListButton()[theGame.getGraph().getDFS()[i]]->showTour();
                 theGame.setCurrentState(theGame.getListButton()[theGame.getGraph().getDFS()[i]]->getState());
+                theGame.getListButton()[theGame.getGraph().getDFS()[i]]->printDisplay();
+                if (theGame.getCurrentState() != 0) {
+                    cout << endl << "Pada halaman ini," << endl;
+                }
+                theGame.getListButton()[theGame.getGraph().getDFS()[i]]->showTour();
             } else {
                 // cout << "Masuk kasus 2" << endl;
                 theGame.getListButton()[theGame.getGraph().getDFS()[i]]->showTour();
@@ -110,6 +121,21 @@ int main() {
             cin.get();
         }
     }
+
+    // MEMULAI PERMAINAN SESUNGGUHNYA
+    cout << endl << endl << endl << endl << endl << "Terima kasih sudah menyimak tur-produk kami." << endl;
+    cout << endl << "Berikut adalah kondisi yang harus Anda penuhi untuk menang: " << endl
+         << "MILIKILAH SALDO SEBESAR 21000, DENGAN MINIMAL 3 BARANG MENJADI MILIK ANDA" << endl;
+    cout << endl << "Silakan ketik \'STATUS\' jika Anda ingin melihat informasi detail" << endl
+         << "mengenai uang dan barang Anda, keranjang, serta kembalian." << endl
+         << "SELAMAT BERBELANJA!";
+    theGame.getListButton()[0]->printDisplay();
+    theGame.setCurrentState(0);
     
+    
+    while (theGame.getMoney() != 21000 || theGame.getInventory().size() < 3) {
+        theGame.inputCommand();
+    }
+    cout << endl << endl << "SELAMAT, ANDA BERHASIL!" << endl;
     return 0;
 }

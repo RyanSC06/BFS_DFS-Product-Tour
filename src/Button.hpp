@@ -23,7 +23,7 @@ class Button00 : public Button {  //MAIN
     void showTour();
 };
 
-class Button01 : public Button {  //RENGOKU
+class Button01 : public Button {  //REN
   private:
     
   public:
@@ -31,7 +31,7 @@ class Button01 : public Button {  //RENGOKU
     void showTour();
 };
 
-class Button02 : public Button {  //YANMA GUST
+class Button02 : public Button {  //YANM
   private:
     
   public:
@@ -39,7 +39,7 @@ class Button02 : public Button {  //YANMA GUST
     void showTour();
 };
 
-class Button03 : public Button {  //GEATS
+class Button03 : public Button {  //EAT
   private:
     
   public:
@@ -79,7 +79,7 @@ class Button11 : public Button {  //PILIH BARANG
     void showTour();
 };
 
-class Button12 : public Button {  //KEMBALI DARI 1
+class Button12 : public Button {  //BACK DARI 1
   private:
     
   public:
@@ -95,7 +95,7 @@ class Button21 : public Button {  //KLAIM ATAU SUMBANGKAN
     void showTour();
 };
 
-class Button22 : public Button {  //KEMBALI DARI 2
+class Button22 : public Button {  //BACK DARI 2
   private:
     
   public:
@@ -111,7 +111,7 @@ class Button31 : public Button {  //KONFIRMASI ATAU BATALKAN
     void showTour();
 };
 
-class Button32 : public Button {  //KEMBALI DARI 3
+class Button32 : public Button {  //BACK DARI 3
   private:
     
   public:
@@ -119,7 +119,7 @@ class Button32 : public Button {  //KEMBALI DARI 3
     void showTour();
 };
 
-class Button41 : public Button {  //KEMBALI DARI 4
+class Button41 : public Button {  //BACK DARI 4
   private:
     
   public:
@@ -135,7 +135,7 @@ class Button51 : public Button {  //TOP UP
     void showTour();
 };
 
-class Button52 : public Button {  //KEMBALI DARI 5
+class Button52 : public Button {  //BACK DARI 5
   private:
     
   public:
@@ -143,7 +143,7 @@ class Button52 : public Button {  //KEMBALI DARI 5
     void showTour();
 };
 
-class Button61 : public Button {  //KEMBALI DARI 6
+class Button61 : public Button {  //BACK DARI 6
   private:
     
   public:

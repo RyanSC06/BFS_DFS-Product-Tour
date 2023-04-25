@@ -11,7 +11,7 @@ Feature::Feature(int state) {
 
 void Feature::printDisplay() {
     if (this->state == 0) {  //MAIN
-        cout << endl << "Layar Utama" << endl;
+        cout << endl << endl << "Layar Utama" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -23,12 +23,12 @@ void Feature::printDisplay() {
         cout << "|          Y            \\`---`  /           / o \\         |" << endl;
         cout << "|         _|_            `----'`           (_/ \\_)        |" << endl;
         cout << "|                                                         |" << endl;
-        cout << "|       RENGOKU         YANMA GUST          GEATS         |" << endl;
+        cout << "|         REN              YANM              EAT          |" << endl;
         cout << "|         112               24                8           |" << endl;
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
-    } else if (this->state == 1) {  //ISI RENGOKU
-        cout << endl << "Layar RENGOKU" << endl;
+    } else if (this->state == 1) {  //ISI REN
+        cout << endl << endl << "Layar REN" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -44,8 +44,8 @@ void Feature::printDisplay() {
         cout << "|                      ZECTER                             |" << endl;
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
-    } else if (this->state == 2) {  //ISI YANMA GUST
-        cout << endl << "Layar YANMA GUST" << endl;
+    } else if (this->state == 2) {  //ISI YANM
+        cout << endl << endl << "Layar YANM" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -61,8 +61,8 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
-    } else if (this->state == 3) {  //ISI GEATS
-        cout << endl << "Layar GEATS" << endl;
+    } else if (this->state == 3) {  //ISI EAT
+        cout << endl << endl << "Layar EAT" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -79,7 +79,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 4) {  //ISI 112
-        cout << endl << "Layar 112" << endl;
+        cout << endl << endl << "Layar 112" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -96,7 +96,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 5) {  //ISI 24
-        cout << endl << "Layar 24" << endl;
+        cout << endl << endl << "Layar 24" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -113,7 +113,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "===========================================================" << endl;
     } else if (this->state == 6) {
-        cout << endl << "Layar 8" << endl;
+        cout << endl << endl << "Layar 8" << endl;
         cout << "===========================================================" << endl;
         cout << "|                          Ryan Samuel Chandra (13521140) |" << endl;
         cout << "|                                                         |" << endl;
@@ -122,7 +122,7 @@ void Feature::printDisplay() {
         cout << "|                                                         |" << endl;
         cout << "|                                                         |" << endl;
         cout << "|                   Kode Pembelian Anda:                  |" << endl;
-        cout << "|                        12Y41VSC06                       |" << endl;
+        cout << "|                           SC06                          |" << endl;
         cout << "|                                                         |" << endl;
         cout << "|                                                         |" << endl;
         cout << "|                                                         |" << endl;
